@@ -29,7 +29,7 @@ def get_current_stamps():
 
 def createFileIfDoesntExist(filepath):
     if not(os.path.exists(filepath)):
-        print 'Creating file '+str(filepath)
+        print 'Started Logging Events For Today '
         write_to_file(filepath,[])
 
 def add_a_stamp(filepath):
@@ -104,5 +104,5 @@ if __name__=='__main__':
         elif PTS_command == "report":
             print_all_durations(outerjsonpath,datestamp)
         else:
-            print("Invalid Command: Try one amongst PTS add <Event>, undo, show or report")
+            print("Invalid Command: Try one amongst 1.rightnow add <TaskName> (shortened to rnw <Task>), undo, show or report")
 
